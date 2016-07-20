@@ -37,27 +37,6 @@ int main(int argc, char* argv[])
 {
 	srand(time(NULL));
 
-#if defined(_WIN32) || (_WIN64)
-
-	string cwd(getcwd(NULL, 0));
-
-	string images_dir = cwd + "\\HealBreaker\\images\\";
-
-	string audio_dir = cwd + "\\HealBreaker\\audio\\";
-
-#endif
-
-
-#if defined(__APPLE__)
-
-	string cwd(getcwd(NULL, 0));
-
-	string images_dir = cwd + "/HealBreaker/images/";
-
-	string audio_dir = cwd + "/HealBreaker/audio/";
-
-#endif
-
 
 
 	SDL_Window *window;
